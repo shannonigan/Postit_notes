@@ -1,0 +1,8 @@
+<h1>Post Its </h1>
+
+<h4><%= @note.title %></h4>
+<p><%= @note.body %></p>
+
+<%= link_to 'Edit', edit_note_path(@note.id) %>
+<%= link_to 'Delete', note_path(@note.id), method: :delete %>
+<%= link_to 'Back', notes_path %>

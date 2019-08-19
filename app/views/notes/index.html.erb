@@ -1,0 +1,9 @@
+<h1>~Post Its~</h1>
+
+
+<%= link_to "New Note", new_note_path %>
+
+<% @notes.each do |note| %>
+  <h2> <%= note.title %> </h2>
+  <%= link_to 'Show Notes', note_path(note.id) %>
+<% end %>
